@@ -1,0 +1,14 @@
+
+.weekend-roundup {
+    font-size: 14px;
+}
+
+.weekend-roundup h1 {
+    display: block;
+    text-align: center;
+}
+
+.weekend-roundup img {
+    display: block;
+    margin: auto;
+}
