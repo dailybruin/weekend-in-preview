@@ -1,3 +1,22 @@
+/* -------------------------------- */
+/* preview section */
+/* -------------------------------- */
+.previews {
+    padding: 0% 25%;
+    margin-bottom: 1%;
+}
+
+.previews img {
+    display: block;
+    margin: auto;
+    max-height: 20vh;
+    max-width: 100%;
+}
+
+.previews h3 {
+    margin-top: 5%;
+    text-align: center;
+}
 
 /* -------------------------------- */
 /* weekend roundup section */

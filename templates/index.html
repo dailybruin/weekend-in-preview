@@ -14,48 +14,58 @@
         <div class="grace's-part">
     
         </div>
-        <div class="simon's-part"> 
-    
-        </div>
-        <div class="weekend-roundup howard's-part">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="decorated"><span>Weekend Roundup</span></h2>
-                </div>
-                {% for story in weekend_roundup %}
-                <div class="col-sm-12 article-box">
-                    <div class="row">
-                        <!-- picture on the left -->
-                        {% if loop.index0 % 2 == 0 %}
-                        <div class="col-sm-12 col-md-6">
-                            <img src={{story.picture}}>
-                        </div>
-                        {% endif %}
-                        <div class="col-sm-12 col-md-6">
-                            <div clokass="row">
-                                <div class="col-sm-12">
-                                    <h2>{{story.headline}}</h2>
-                                </div>
-                                <div class="col-sm-12">
-                                    <p>{{story.description}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- picture on the right -->
-                        {% if loop.index0 % 2 == 1 %}
-                        <div class="col-sm-12 col-md-6">
-                            <img src={{story.picture}}>
-                        </div>
-                        {% endif %}
+        <div class="row previews"> 
+            <!-- have from two to four stories -->
+            {% for story in preview %}
+            <div class="col-lg-4 preview-box">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src={{story.picture}}>
+                    </div>
+                    <div class="col-sm-12">
+                        <h3>{{story.headline}}</h3>
                     </div>
                 </div>
-                {% if loop.index == loop.length / 2 %}
-                <div class="col-sm-12">
-                    <h2 class="decorated"><span></span></h2>
-                </div>
-                {% endif %}
-                {% endfor %}
             </div>
+            {% endfor %}
+        </div>
+        <div class="row weekend-roundup">
+            <div class="col-sm-12">
+                <h2 class="decorated"><span>Weekend Roundup</span></h2>
+            </div>
+            {% for story in weekend_roundup %}
+            <div class="col-sm-12 article-box">
+                <div class="row">
+                    <!-- picture on the left -->
+                    {% if loop.index0 % 2 == 0 %}
+                    <div class="col-sm-12 col-md-6">
+                        <img src={{story.picture}}>
+                    </div>
+                    {% endif %}
+                    <div class="col-sm-12 col-md-6">
+                        <div clokass="row">
+                            <div class="col-sm-12">
+                                <h2>{{story.headline}}</h2>
+                            </div>
+                            <div class="col-sm-12">
+                                <p>{{story.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- picture on the right -->
+                    {% if loop.index0 % 2 == 1 %}
+                    <div class="col-sm-12 col-md-6">
+                        <img src={{story.picture}}>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% if loop.index == loop.length / 2 %}
+            <div class="col-sm-12">
+                <h2 class="decorated"><span></span></h2>
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </body>
