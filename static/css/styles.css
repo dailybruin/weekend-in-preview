@@ -1,14 +1,53 @@
 
+/* -------------------------------- */
+/* weekend roundup section */
+/* -------------------------------- */
 .weekend-roundup {
     font-size: 14px;
 }
 
-.weekend-roundup h1 {
-    display: block;
+.weekend-roundup .article-box {
+    margin: 20px 0px;
+    padding: 0% 12.5%;
+}
+
+/* text with lines: https://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side */
+.decorated{
+    overflow: hidden;
     text-align: center;
+}
+.decorated > span{
+   position: relative;
+   display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: 2px solid;
+   width: 591px; /* half of limiter*/
+   margin: 0 20px;
+}
+.decorated > span:before{
+   right: 100%;
+}
+.decorated > span:after{
+   left: 100%;
 }
 
 .weekend-roundup img {
+    max-height: 100%;
+    max-width: 95%;
+    padding: 2%;
     display: block;
     margin: auto;
+}
+
+.weekend-roundup h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.weekend-roundup p {
+    padding: 0% 10%;
 }

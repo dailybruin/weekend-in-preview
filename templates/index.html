@@ -20,15 +20,40 @@
         <div class="weekend-roundup howard's-part">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>Weekend Roundup</h1>
+                    <h2 class="decorated"><span>Weekend Roundup</span></h2>
                 </div>
                 {% for story in weekend_roundup %}
-                <div class="col-sm-12 col-md-6">
-                        <!-- <img src="http://via.placeholder.com/350x250" -->
+                <div class="col-sm-12 article-box">
+                    <div class="row">
+                        <!-- picture on the left -->
+                        {% if loop.index0 % 2 == 0 %}
+                        <div class="col-sm-12 col-md-6">
+                            <img src={{story.picture}}>
+                        </div>
+                        {% endif %}
+                        <div class="col-sm-12 col-md-6">
+                            <div clokass="row">
+                                <div class="col-sm-12">
+                                    <h2>{{story.headline}}</h2>
+                                </div>
+                                <div class="col-sm-12">
+                                    <p>{{story.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- picture on the right -->
+                        {% if loop.index0 % 2 == 1 %}
+                        <div class="col-sm-12 col-md-6">
+                            <img src={{story.picture}}>
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    {{story.headline}}
+                {% if loop.index == loop.length / 2 %}
+                <div class="col-sm-12">
+                    <h2 class="decorated"><span></span></h2>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
