@@ -1,56 +1,64 @@
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
 /* -------------------------------- */
+
 /* topbar section */
+
 /* -------------------------------- */
- .container-fluid {
-  padding: 0;
-  margin: 0;
-}
+
 .topbar {
-  margin: 0;
-  padding: 0;
-}
-.success {
-  background-color: #015584;
-  height: 50vw;
-  padding-top: 5vw;
-  padding-left: 10vw;
-  padding-right: 0;
-  min-width: 100vw;
+    margin: 0px 0px 3vh 0px;
+    padding: 0px 0px 0px 15px;
+
+    background-color: #015584;
 }
 
 .logo {
-  width: 40%;
-  height: 40%;
+    width: 35vw;
+    margin-left: -5px;
 }
 
-.title {}
 .title h1 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 8vw;
+    font-family: 'Roboto Slab', serif;
+    font-size: 72px;
 }
+
 .w {
-  color: #015584;
+    color: #015584;
 }
+
 .ip {
-  color: #E8D367;
+    color: #E8D367;
 }
 
 .box {
-  width: 100vw;
-  height: 8vw;
-  background-color: #E8D367;
+    background-color: #E8D367;
+    padding-right: 0px;
 }
 
 .blurb {
-  color: white;
-  font-size: 1.5vw;
-  max-width: 65vw;
-  padding-top: 10px;
+    color: white;
+    font-size: 36px;
+    padding-top: 10px;
 }
 
 /* -------------------------------- */
+
 /* preview section */
+
 /* -------------------------------- */
+
 .previews {
     padding: 0% 25%;
     margin-bottom: 1%;
@@ -69,8 +77,11 @@
 }
 
 /* -------------------------------- */
+
 /* weekend roundup section */
+
 /* -------------------------------- */
+
 .weekend-roundup {
     font-size: 14px;
 }
@@ -81,27 +92,34 @@
 }
 
 /* text with lines: https://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side */
-.decorated{
+
+.decorated {
     overflow: hidden;
     text-align: center;
 }
-.decorated > span{
-   position: relative;
-   display: inline-block;
+
+.decorated>span {
+    position: relative;
+    display: inline-block;
 }
-.decorated > span:before, .decorated > span:after{
-   content: '';
-   position: absolute;
-   top: 50%;
-   border-bottom: 2px solid;
-   width: 591px; /* half of limiter*/
-   margin: 0 20px;
+
+.decorated>span:before,
+.decorated>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 591px;
+    /* half of limiter*/
+    margin: 0 20px;
 }
-.decorated > span:before{
-   right: 100%;
+
+.decorated>span:before {
+    right: 100%;
 }
-.decorated > span:after{
-   left: 100%;
+
+.decorated>span:after {
+    left: 100%;
 }
 
 .weekend-roundup img {

@@ -12,17 +12,22 @@
 </head>
 
 <body>
-    <div class="container-fluid topbar success">
-      <div class="col-sm-12 col-md-10 col-md-offset-2">
-        <img class="logo" src="/static/img/db_logo.svg" />
-        <br><br>
-        <div class="title">
-          <div class="box"><h1 class="w">Weekend</h1></div>
-          <h1 class="ip">In Preview</h1>
-          <div><p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+    <div class="container-fluid">
+        <div class="row topbar">
+            <div class="col-sm-12 col-md-10 offset-md-2 no-padding">
+                <img class="logo" src="/static/img/db_logo.svg" />
+                <div class="title">
+                    <div class="box">
+                        <h1 class="w">Weekend</h1>
+                    </div>
+                    <h1 class="ip">In Preview</h1>
+                    <div>
+                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
         <div class="row previews">
             <!-- have from two to four stories -->
             {% for story in preview %}
@@ -73,8 +78,7 @@
             <div class="col-sm-12">
                 <h2 class="decorated"><span></span></h2>
             </div>
-            {% endif %}
-            {% endfor %}
+            {% endif %} {% endfor %}
         </div>
     </div>
 </body>
